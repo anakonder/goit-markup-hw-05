@@ -661,6 +661,8 @@ body {
   height: 100%;
 
   background-color: var(--modal-overlay);
+
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .backdrop.is-hidden {
