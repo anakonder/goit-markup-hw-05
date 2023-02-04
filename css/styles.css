@@ -554,8 +554,9 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow: auto;
   transform: translate(0, 100%);
+  transition: transform 250ms linear;
 
   padding: 40px 32px;
 
@@ -563,7 +564,9 @@ body {
   background-color: var(--primary-brand);
 }
 
-.portfolio-link:hover .overlay
+.portfolio-item:hover .overlay {
+  transform: translate(0, 0);
+}
 
 /**
   |============================
